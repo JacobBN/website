@@ -1,0 +1,16 @@
+#wrapper {
+  position: relative;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  color: #f44336;
+}
