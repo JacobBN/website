@@ -1,8 +1,27 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+  <button mat-icon-button aria-label="Menu">
     <mat-icon>menu</mat-icon>
   </button>
   <span>JacobBN</span>
+  <span id="spacer"></span>
+  <a 
+    aria-label="LinkedIn Profile"
+    class="social-icon"
+    href="https://www.linkedin.com/in/jacobbn/"
+    mat-icon-button
+    target="_blank"
+  >
+    <fa-icon [icon]="faLinkedin" size="3x"></fa-icon>
+  </a>
+  <a
+    aria-label="GitHub Repository"
+    class="social-icon"
+    href="https://github.com/JacobBN/website"
+    mat-icon-button
+    target="_blank"
+  >
+    <fa-icon [icon]="faGithub" size="3x"></fa-icon>
+  </a>
 </mat-toolbar>
 
 <router-outlet></router-outlet>
