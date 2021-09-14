@@ -5,7 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
-// Materials
+// Fontawesome and Materials
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 // Custom components
@@ -20,7 +23,10 @@ import { PageNotFoundComponent } from './views/page-not-found/page-not-found.com
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    // Materials
+    // Fontawesome and Materials
+    FontAwesomeModule,
+    MatButtonModule,
+    MatIconModule,
     MatToolbarModule
   ],
   providers: [],
