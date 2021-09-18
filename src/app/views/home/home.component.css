@@ -1,0 +1,20 @@
+.display-box-background h1 {
+  color: white;
+  top: 63%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.circle-link {
+  text-align: center;
+}
+.circle-link fa-icon {
+  opacity: 0.7;
+}
+.circle-link fa-icon:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+h2 {
+  margin-top: 4px;
+  font-size: 2.0em;
+}
