@@ -10,6 +10,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 // Custom components
@@ -37,6 +38,7 @@ import { ProjectsComponent } from './views/projects/projects.component';
     MatButtonModule,
     MatGridListModule,
     MatIconModule,
+    MatSidenavModule,
     MatToolbarModule
   ],
   providers: [],

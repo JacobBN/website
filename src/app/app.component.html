@@ -1,6 +1,6 @@
-<mat-toolbar id="toolbar" color="primary">
+<mat-toolbar id="toolbar" class="mat-elevation-z3" color="primary">
   <button id="menu-button" mat-icon-button aria-label="Menu">
-    <mat-icon>menu</mat-icon>
+    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
   </button>
   <a routerLink="/">JacobBN</a>
   <span id="spacer"></span>
@@ -24,4 +24,21 @@
   </a>
 </mat-toolbar>
 
-<router-outlet></router-outlet>
+<mat-sidenav-container id="content-container" fullscreen hasBackdrop="false">
+  <mat-sidenav class="mat-elevation-z3" #sidenav mode="side">
+    <ul class="button-list">
+      <li routerLink="/">
+        Home
+      </li>
+      <li routerLink="/about-me">
+        About Me
+      </li>
+      <li routerLink="/projects">
+        Projects
+      </li>
+    </ul>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>    
+  </mat-sidenav-content>
+</mat-sidenav-container>
