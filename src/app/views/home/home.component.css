@@ -1,7 +1,8 @@
 .display-box-background h1 {
   color: white;
-  top: 40%;
-  left: 65%;
+  top: 63%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .circle-link {
   text-align: center;
