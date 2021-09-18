@@ -8,6 +8,8 @@ import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 })
 export class PageNotFoundComponent implements OnInit {
   faQuestionCircle = faQuestionCircle;
+  
   constructor() { }
+
   ngOnInit(): void { }
 }
