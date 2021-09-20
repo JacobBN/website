@@ -20,3 +20,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   font-size: 3.5em;
   width: fit-content;
 }
+
+/* Overwriting material tab styling */
+.mat-tab-body-content {
+  padding: 24px 48px 24px 48px;
+}
+.mat-tab-label-active {
+  opacity: 1 !important;
+}
