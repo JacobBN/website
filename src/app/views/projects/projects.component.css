@@ -1,0 +1,15 @@
+.card-avatar {
+  background-size: cover;
+}
+h1 {
+  margin-top: 12px;
+  text-align: center;
+}
+.disabled-card {
+  opacity: 0.7;
+}
+.mat-card {
+  display: inline-block;
+  margin: 20px;
+  width: 400px;
+}
