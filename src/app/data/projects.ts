@@ -50,7 +50,7 @@ export const getProjects = (): Array<Project> => {
       avatar: '../../../assets/icons/reshot-icon-authentication-9BAULQ4SZH.svg',
       codeUrl: '',
       description: '<p>' + 
-                   'Coming soon... Issue link: https://github.com/JacobBN/website/issues/10' + 
+                   'Coming soon... <a href="https://github.com/JacobBN/website/issues/10">Link to GitHub Issue</a>' + 
                    '</p>',
       disabled: true,
       hasProofOfConcept: true,
@@ -61,7 +61,7 @@ export const getProjects = (): Array<Project> => {
       avatar: '../../../assets/icons/reshot-icon-programming-KLA56NUXFZ.svg',
       codeUrl: '',
       description: '<p>' + 
-                   'Coming soon... Issue link: https://github.com/JacobBN/website/issues/11' + 
+                   'Coming soon... <a href="https://github.com/JacobBN/website/issues/11">Link to GitHub Issue</a>' + 
                    '</p>',
       disabled: true,
       hasProofOfConcept: false,
@@ -72,7 +72,7 @@ export const getProjects = (): Array<Project> => {
       avatar: '../../../assets/icons/reshot-icon-programming-KLA56NUXFZ.svg',
       codeUrl: '',
       description: '<p>' + 
-                   'Coming soon... Issue link: https://github.com/JacobBN/website/issues/12' + 
+                   'Coming soon... Issue link: <a href="https://github.com/JacobBN/website/issues/12">Link to GitHub Issue</a>' + 
                    '</p>',
       disabled: true,
       hasProofOfConcept: false,
@@ -83,7 +83,7 @@ export const getProjects = (): Array<Project> => {
       avatar: '../../../assets/icons/reshot-icon-api-PFKQBLJ8WR.svg',
       codeUrl: '',
       description: '<p>' + 
-                   'Coming soon... Issue link: https://github.com/JacobBN/website/issues/13' + 
+                   'Coming soon... Issue link: <a href="https://github.com/JacobBN/website/issues/13">Link to GitHub Issue</a>' + 
                    '</p>',
       disabled: true,
       hasProofOfConcept: false,
@@ -94,7 +94,7 @@ export const getProjects = (): Array<Project> => {
       avatar: '../../../assets/icons/reshot-icon-custom-coding-SLQZHKDFNP.svg',
       codeUrl: '',
       description: '<p>' + 
-                   'Coming soon... Issue link: https://github.com/JacobBN/website/issues/14' + 
+                   'Coming soon... Issue link: <a href="https://github.com/JacobBN/website/issues/14">Link to GitHub Issue</a>' + 
                    '</p>',
       disabled: true,
       hasProofOfConcept: false,
