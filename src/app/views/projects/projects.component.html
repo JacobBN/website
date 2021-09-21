@@ -1,35 +1,14 @@
 <h1>Projects</h1>
 
-<mat-card class="project-card">
+<mat-card *ngFor="let project of projects" [ngClass]="{'disabled-card' : project.disabled}">
   <mat-card-header>
-    <div mat-card-avatar class="card-avatar" style="background-image: url('../../../assets/logos/angular_solidBlack.png');"></div>
-    <mat-card-title>This Website</mat-card-title>
-    <mat-card-subtitle>Angular</mat-card-subtitle>
+    <div mat-card-avatar class="card-avatar" style="background-image: url({{project.avatar}});"></div>
+    <mat-card-title [innerHTML]="project.title"></mat-card-title>
+    <mat-card-subtitle>{{project.tags}}</mat-card-subtitle>
   </mat-card-header>
-  <mat-card-content>
-    <p>
-      I chose to write this website in Angular to gain more familiarity with it. Professionally, I've mostly used 
-      Vue.js so it was a good opportunity to expand my skillset.
-    </p>
-  </mat-card-content>
+  <mat-card-content [innerHTML]="project.description"></mat-card-content>
   <mat-card-actions>
-    <a mat-button href="https://github.com/JacobBN/website" target="_blank">GO TO CODE</a>
-  </mat-card-actions>
-</mat-card>
-
-<mat-card class="project-card">
-  <mat-card-header>
-    <div mat-card-avatar class="card-avatar" style="background-image: url('https://material.angular.io/assets/img/examples/shiba2.jpg');"></div>
-    <mat-card-title>Capstone Project</mat-card-title>
-    <mat-card-subtitle>Angular</mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-content>
-    <p>
-      I chose to write this website in Angular to gain more familiarity with it. Professionally, I've mostly used 
-      Vue.js so it was a good opportunity to expand my skillset.
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <a mat-button href="https://github.com/HGTP/hgtp-capstone" target="_blank">GO TO CODE</a>
+    <a mat-button [href]="project.codeUrl" target="_blank" [disabled]="project.disabled">GO TO CODE</a>
+    <button *ngIf="project.hasProofOfConcept" mat-button [disabled]="project.disabled">PROOF OF CONCEPT</button>
   </mat-card-actions>
 </mat-card>
