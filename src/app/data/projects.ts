@@ -86,7 +86,7 @@ export const getProjects = (): Array<Project> => {
                    'Coming soon...' + 
                    '</p>',
       disabled: true,
-      hasProofOfConcept: true,
+      hasProofOfConcept: false,
       tags: 'Node.js, Swagger',
     },
     {
@@ -97,7 +97,7 @@ export const getProjects = (): Array<Project> => {
                    'Coming soon...' + 
                    '</p>',
       disabled: true,
-      hasProofOfConcept: true,
+      hasProofOfConcept: false,
       tags: 'C#, .NET Core, Swagger',
     }
   ];
