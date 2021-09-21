@@ -27,13 +27,13 @@
 <mat-sidenav-container id="content-container" fullscreen hasBackdrop="false">
   <mat-sidenav class="mat-elevation-z3" #sidenav mode="side">
     <ul class="button-list">
-      <li routerLink="/">
+      <li routerLink="/" (click)="sidenav.close()">
         Home
       </li>
-      <li routerLink="/about-me">
+      <li routerLink="/about-me" (click)="sidenav.close()">
         About Me
       </li>
-      <li routerLink="/projects">
+      <li routerLink="/projects" (click)="sidenav.close()">
         Projects
       </li>
     </ul>

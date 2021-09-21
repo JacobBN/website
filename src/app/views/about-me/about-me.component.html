@@ -1,1 +1,41 @@
-<p>about-me works!</p>
+<div class="display-box">
+  <mat-tab-group backgroundColor="primary" color="primary" dynamicHeight>
+    <mat-tab label="Introduction">
+      <mat-grid-list cols="1" rowHeight="6:1">
+        <mat-grid-tile>
+          <img id="portrait" src="../../../assets/img/JBN_Portrait.png"/>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div id="introduction-text">
+            <p>
+              Hello, I'm Jacob B. Nørgaard.
+            </p>
+            <p>
+              I'm originally from Denmark, but moved to the United States to be with my wife, Melanie, who's from Texas. 
+              We have a wonderful toddler son, who's full of energy.
+            </p>
+            <p>
+              As a software engineer, I've worked in agile environments to build solid and well tested products 
+              for various stakeholders. I love learning and using my competencies in problem solving, cloud technology 
+              (like Azure), and software such as Node.js, C#, and front-end frameworks like Vue.js.
+            </p>
+            <p>
+              I'm also passionate about software architecture and design patterns. Just as a good team can do 
+              much more than an individual, a well-architected solution rather than localized bandaid-solutions 
+              is key to solid software that's testable, maintainable, and scalable.
+            </p>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-tab>
+    <mat-tab label="Career">
+      <embed id="embedded-pdf" src="../../../assets/jacob-b-norgaard_resume.pdf" type="application/pdf">
+    </mat-tab>
+    <mat-tab label="Interests" disabled>
+      <ng-template mat-tab-label>
+        <label  class="labelHeading" matTooltip="Coming soon...">Interests</label>
+      </ng-template>
+      <!-- Music, Leather working, Cooking, Enjoying the outdoors, Spending time with family -->
+    </mat-tab>
+  </mat-tab-group>
+</div>
