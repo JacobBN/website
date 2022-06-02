@@ -1,0 +1,92 @@
+@use '@angular/material' as mat;
+
+$primary-palette: (
+  50: #e0f2f1,
+  100: #b2dfdb,
+  200: #80cbc4,
+  300: #4db6ac, // Default.
+  400: #26a699,
+  500: #009687,
+  600: #00897a,
+  700: #00796b,
+  800: #00695c,
+  900: #004d40,
+  contrast: (
+    50: black, // Min. 55% opacity.
+    100: black, // Min. 57% opacity.
+    200: black, // Min. 59% opacity.
+    300: black, // Min. 64% opacity.
+    400: black, // Min. 69% opacity.
+    500: black, // Min. 77% opacity.
+    600: black, // Min. 89% opacity.
+    700: white, // Min. 88% opacity.
+    800: white, // Min. 76% opacity.
+    900: white, // Min. 59% opacity.
+  )
+);
+
+$accent-palette: (
+  50: #e4f5fa,
+  100: #bce6f3,
+  200: #95d6ec,
+  300: #77c5e3,
+  400: #67b9dd,
+  500: #5eadd8,
+  600: #569fca,
+  700: #4d8cb6, // Default.
+  800: #477ba2,
+  900: #3a5c7e,
+  contrast: (
+    50: black, // Min. 55% opacity.
+    100: black, // Min. 56% opacity.
+    200: black, // Min. 58% opacity.
+    300: black, // Min. 60% opacity.
+    400: black, // Min. 62% opacity.
+    500: black, // Min. 64% opacity.
+    600: black, // Min. 68% opacity.
+    700: white, // Min. 77% opacity.
+    800: white, // Min. 99% opacity.
+    900: white, // Min. 72% opacity.
+  ),
+);
+
+$warn-palette: (
+  50: #f8e6e9,
+  100: #efbfc8,
+  200: #e498a6,
+  300: #d87585,
+  400: #ce606e,
+  500: #c6525b,
+  600: #b64d57, // Default.
+  700: #a14752,
+  800: #8b414e,
+  900: #643843,
+  contrast: (
+    50: black, // Min. 55% opacity.
+    100: black, // Min. 58% opacity.
+    200: black, // Min. 61% opacity.
+    300: black, // Min. 70% opacity.
+    400: black, // Min. 79% opacity.
+    500: black, // Min. 92% opacity.
+    600: white, // Min. 92% opacity.
+    700: white, // Min. 81% opacity.
+    800: white, // Min. 72% opacity.
+    900: white, // Min. 59% opacity.
+  )
+);
+
+
+$my-primary: mat.define-palette($primary-palette, 300, 100, 900);
+$my-accent: mat.define-palette($accent-palette, 700, 300, 900);
+$my-warn: mat.define-palette($warn-palette, 600);
+
+// TODO: Define dark theme.
+$my-theme: mat.define-light-theme((
+ color: (
+   primary: $my-primary,
+   accent: $my-accent,
+   warn: $my-warn,
+ )
+));
+
+@include mat.all-component-themes($my-theme);

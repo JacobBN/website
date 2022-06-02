@@ -5,12 +5,14 @@
   width: 60vw;
   height: calc(100vh - 166px); /* menu height + tab header height + padding */
 }
+
 #introduction-text {
   height: 100%;
   margin: 0;
   width: 670px;
   text-align: center;
 }
+
 #portrait {
   border-radius: 100%;
   border: 1px solid darkgray;
