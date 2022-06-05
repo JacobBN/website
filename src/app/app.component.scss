@@ -2,36 +2,51 @@ a {
   color: white;
   text-decoration: none;
 }
-#content-container {
+
+#sidenav-container {
   top: 64px;
 }
+
 #menu-button {
   margin-right: 6px;
 }
+
 .social-icon {
   margin-right: 12px;
 }
+
 #spacer {
   flex: 1 1 auto;
 }
+
 #toolbar {
   position: fixed;
   top: 0;
   z-index: 100;
 }
+
 ul.button-list {
   list-style-type: none;
   margin: 6px 0 0 0;
   padding: 0 4px 0 4px;
 }
+
 ul.button-list li {
   margin: 3px 0 3px 0;
   padding: 6px 102px 6px 32px;
   border-radius: 3px;
   font-weight: bold;
 }
+
 ul.button-list li:hover {
   background-color: lightgray;
   cursor: pointer;
+  user-select: none;
+}
+
+.nav-title {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }

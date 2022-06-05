@@ -30,7 +30,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/materials-theme.scss",
+              "src/theme.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -98,7 +98,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/materials-theme.scss",
+              "src/theme.scss",
               "src/styles.scss"
             ],
             "scripts": []

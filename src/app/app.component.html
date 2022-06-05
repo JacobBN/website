@@ -2,7 +2,7 @@
   <button id="menu-button" mat-icon-button aria-label="Menu">
     <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
   </button>
-  <a routerLink="/">JacobBN</a>
+  <h1>JacobBN</h1>
   <span id="spacer"></span>
   <a 
     aria-label="LinkedIn Profile"
@@ -24,7 +24,7 @@
   </a>
 </mat-toolbar>
 
-<mat-sidenav-container id="content-container" fullscreen hasBackdrop="false">
+<mat-sidenav-container id="sidenav-container" fullscreen hasBackdrop="false">
   <mat-sidenav class="mat-elevation-z3" #sidenav mode="side">
     <ul class="button-list">
       <li routerLink="/" (click)="sidenav.close()">

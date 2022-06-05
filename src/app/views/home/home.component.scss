@@ -1,20 +1,21 @@
-.display-box-background h1 {
-  color: white;
-  top: 63%;
+:host img:first-child {
+  width: 100%;
+  height: 100%;
+}
+
+.image-text-wrapper {
+  position: absolute;
+  bottom: 22vh;
   left: 50%;
   transform: translateX(-50%);
-}
-.circle-link {
-  text-align: center;
-}
-.circle-link fa-icon {
-  opacity: 0.7;
-}
-.circle-link fa-icon:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-h2 {
-  margin-top: 4px;
-  font-size: 2.0em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 30vw;
+  height: 22vh;
+  background-color: lightgray;
+  border-radius: 3px;
+  opacity: 0.45;
 }

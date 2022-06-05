@@ -1,26 +1,22 @@
-html, body { height: 100%; overflow-y: hidden; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-.display-box {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  height: calc(100vh - 64px);
-  margin: 0;
-  padding: 0;
-}
-.display-box-background img {
-  position: absolute;
-  width: 100%;
+html, body {
   height: 100%;
+  overflow-y: hidden;
 }
-.display-box-background h1 {
-  position: relative;
-  font-size: 3.5em;
-  width: fit-content;
+
+body {
+  margin: 0;
 }
+
 a {
   text-decoration: none;
 }
-p {
-  font-size: 1.1em;
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(171, 171, 171);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(146, 146, 146);
 }
