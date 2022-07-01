@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +7,4 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 })
 export class AppComponent {
   title = 'website';
-  faGithub = faGithub;
-  faLinkedin = faLinkedin;
 }
