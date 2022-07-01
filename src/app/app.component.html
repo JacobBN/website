@@ -1,44 +1,4 @@
-<mat-toolbar id="toolbar" class="mat-elevation-z3" color="primary">
-  <button id="menu-button" mat-icon-button aria-label="Menu">
-    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
-  </button>
-  <a routerLink="/">JacobBN</a>
-  <span id="spacer"></span>
-  <a 
-    aria-label="LinkedIn Profile"
-    class="social-icon"
-    href="https://www.linkedin.com/in/jacobbn/"
-    mat-icon-button
-    target="_blank"
-  >
-    <fa-icon [icon]="faLinkedin" size="3x"></fa-icon>
-  </a>
-  <a
-    aria-label="GitHub Repository"
-    class="social-icon"
-    href="https://github.com/JacobBN"
-    mat-icon-button
-    target="_blank"
-  >
-    <fa-icon [icon]="faGithub" size="3x"></fa-icon>
-  </a>
-</mat-toolbar>
-
-<mat-sidenav-container id="content-container" fullscreen hasBackdrop="false">
-  <mat-sidenav class="mat-elevation-z3" #sidenav mode="side">
-    <ul class="button-list">
-      <li routerLink="/" (click)="sidenav.close()">
-        Home
-      </li>
-      <li routerLink="/about-me" (click)="sidenav.close()">
-        About Me
-      </li>
-      <li routerLink="/projects" (click)="sidenav.close()">
-        Projects
-      </li>
-    </ul>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <router-outlet></router-outlet>    
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<menu-bar></menu-bar>
+<div id="content">
+  <router-outlet></router-outlet>
+</div>

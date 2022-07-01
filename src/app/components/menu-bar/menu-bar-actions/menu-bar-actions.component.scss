@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  button {
+    margin: 2px;
+    font-size: 1em;
+    padding: 2px 24px;
+  }
+}

@@ -3,27 +3,20 @@
   top: 74px;
   right: 35px;
 }
+
 #github-pointer h3 {
   float: left;
   margin-right: 10px;
 }
+
 #github-pointer #pointer-icon {
   float: right;
 }
+
 #wrapper {
   position: relative;
   left: 50%;
   top: 40%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-h1 {
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-h2 {
-  color: #f44336;
-}
-h3 {
-  font-size: 1.5em;
 }

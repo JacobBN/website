@@ -1,32 +1,20 @@
-<div class="display-box display-box-background">
-  <img src="assets/img/workdesk.webp"/>
-  <h1>Welcome</h1>
-</div>
-<div class="display-box">
-  <mat-grid-list cols="4" rowHeight="1:2">
-    <mat-grid-tile></mat-grid-tile>
-    <mat-grid-tile>
-      <div class="circle-link">
-        <fa-icon
-          [icon]="faProjectDiagram"
-          size="10x"
-          style="color: darkkhaki;"
-          routerLink="/projects"
-        ></fa-icon>
-        <h2>Projects</h2>
-      </div>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <div class="circle-link">
-        <fa-icon
-          [icon]="faUserCircle"
-          size="10x"
-          style="color: darkcyan;"
-          routerLink="/about-me"
-        ></fa-icon>
-        <h2>About Me</h2>
-      </div>
-    </mat-grid-tile>
-    <mat-grid-tile></mat-grid-tile>
-  </mat-grid-list>
-</div>
+<content-box>
+  <div class="introduction">
+    <img src="assets/img/JBN_Portrait.png"/>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel fringilla est ullamcorper eget nulla. A cras semper auctor neque vitae tempus quam pellentesque nec. Mi eget mauris pharetra et ultrices neque.
+    </p>
+  </div>
+  <hr/>
+  <div class="overview">
+    <digest title="Lorem">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum posuere urna nec tincidunt. Odio morbi quis commodo odio aenean sed adipiscing.</p>
+    </digest>
+    <digest title="Ipsum">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum posuere urna nec tincidunt. Odio morbi quis commodo odio aenean sed adipiscing.</p>
+    </digest>
+    <digest title="Dolor">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum posuere urna nec tincidunt. Odio morbi quis commodo odio aenean sed adipiscing.</p>
+    </digest>
+  </div>
+</content-box>
